@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seminar Registration Form for Tech Innovation Conference">
+    <title>Seminar Registration Form</title>
+</head>
+<body>
+    <h1>Tech Innovation Seminar Registration</h1>
+    <p>Fill out the form below to register for the upcoming seminar on technology advancements.</p>
+
+    <form action="#" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name"><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address"><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number"><br><br>
+
+        <label for="organization">Organization/Institution:</label>
+        <input type="text" id="organization" name="organization" required placeholder="Enter your organization name"><br><br>
+
+        <label for="topic">Preferred Topic:</label>
+        <select id="topic" name="topic" required>
+            <option value="">Select a topic</option>
+            <option value="AI">Artificial Intelligence</option>
+            <option value="Cloud">Cloud Computing</option>
+            <option value="Cybersecurity">Cybersecurity Trends</option>
+        </select><br><br>
+
+        <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe">
+            Subscribe to our newsletter for updates
+        </label><br><br>
+
+        <button type="submit">Register Now</button>
+    </form>
+
+</body>
+</html>
