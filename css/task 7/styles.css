@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    padding-top: 250px;
+    background-color: #f8f9fa;
+}
+
+.custom-button {
+    background-color: #3498db;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+    background-color: #2ecc71;
+    transform: scale(1.1);
+}
+
+.custom-button:active {
+    background-color: #e74c3c;
+    transform: scale(0.9);
+}
