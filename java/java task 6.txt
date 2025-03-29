@@ -1,0 +1,27 @@
+class Main {
+    public static void main(String[] args) {
+        int intVal = 10;
+        double doubleVal = 20.5;
+        char charVal = 'A';
+        boolean boolVal = true;
+        float floatVal = 15.75f;
+        long longVal = 100000L;
+        short shortVal = 500;
+        byte byteVal = 127;
+        System.out.println("Arithmetic Operations:");
+        System.out.println("intVal + doubleVal = " + (intVal + doubleVal));
+        System.out.println("floatVal - intVal = " + (floatVal - intVal));
+        System.out.println("longVal * shortVal = " + (longVal * shortVal));
+        System.out.println("doubleVal / intVal = " + (doubleVal / intVal));
+        System.out.println("intVal % 3 = " + (intVal % 3));
+        System.out.println("\nComparison Operations:");
+        System.out.println("intVal == 10: " + (intVal == 10));
+        System.out.println("doubleVal > floatVal: " + (doubleVal > floatVal));
+        System.out.println("shortVal <= byteVal: " + (shortVal <= byteVal));
+        System.out.println("charVal == 'A': " + (charVal == 'A'));
+        System.out.println("\nLogical Operations:");
+        System.out.println("boolVal && (intVal > 5): " + (boolVal && (intVal > 5)));
+        System.out.println("boolVal || (intVal < 5): " + (boolVal || (intVal < 5)));
+        System.out.println("!boolVal: " + (!boolVal));
+    }
+}

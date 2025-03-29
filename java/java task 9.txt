@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.List;
+abstract class Animal {
+    public abstract void makeSound();
+}
+
+interface Flyable {
+    void fly();
+}
+
+class Lion extends Animal {
+    
+    public void makeSound() {
+        System.out.println("Lion roars!");
+    }
+}
+
+class Eagle extends Animal implements Flyable {
+  
+    public void makeSound() {
+        System.out.println("Eagle screeches!");
+    }
+
+    public void fly() {
+        System.out.println("Eagle is flying high!");
+    }
+}
+
+public class WildlifeSimulation {
+    public static void main(String[] args) {
+        List<Animal> animals = new ArrayList<>();
+        animals.add(new Lion());
+        animals.add(new Eagle());
+
+        for (Animal animal : animals) {
+            animal.makeSound();
+            if (animal instanceof Flyable) {
+                ((Flyable) animal).fly();
+            }
+        }
+    }
+}

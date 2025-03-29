@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+import java.util.List;
+abstract class Shape {
+    public abstract double getArea();
+}
+
+class Circle extends Shape {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
+}
+
+
+class Rectangle extends Shape {
+    private double width, height;
+
+    public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+    public double getArea() {
+        return width * height;
+    }
+}
+
+public class GeometryTutor {
+    public static void main(String[] args) {
+        List<Shape> shapes = new ArrayList<>();
+        shapes.add(new Circle(5));
+        shapes.add(new Rectangle(4, 6));
+
+        for (Shape shape : shapes) {
+            System.out.println("Shape Area: " + shape.getArea());
+        }
+    }
+}

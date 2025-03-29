@@ -1,0 +1,19 @@
+public class BitwiseLogicalOperations {
+    public static void main(String[] args) {
+        int a = 5; 
+        int b = 3;  
+
+        System.out.println("a & b: " + (a & b)); // 0001 -> 1
+        System.out.println("a | b: " + (a | b)); // 0111 -> 7
+        System.out.println("a ^ b: " + (a ^ b)); // 0110 -> 6
+        System.out.println("a << 1: " + (a << 1)); // 1010 -> 10 (Left shift by 1)
+        System.out.println("a >> 1: " + (a >> 1)); // 0010 -> 2 (Right shift by 1)
+        boolean x = true;
+        boolean y = false;
+
+        System.out.println("x && y: " + (x && y)); // Logical AND (short-circuits)
+        System.out.println("x || y: " + (x || y)); // Logical OR (short-circuits)
+        System.out.println("x & y: " + (x & y)); // Bitwise AND (does not short-circuit)
+        System.out.println("x | y: " + (x | y)); // Bitwise OR (does not short-circuit)
+    }
+}

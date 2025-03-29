@@ -1,0 +1,36 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class RobustFileProcessor {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        divide(a, b);
+        
+        String filePath = scanner.next();
+        try {
+            openFile(filePath);
+        } catch (IOException e) {
+        }
+        
+        scanner.close();
+    }
+
+    public static void divide(int a, int b) {
+        try {
+            int result = a / b;
+        } catch (ArithmeticException e) {
+        } finally {
+        }
+    }
+
+    public static void openFile(String path) throws IOException {
+        File file = new File(path);
+        if (!file.exists()) {
+            throw new IOException();
+        }
+    }
+}
